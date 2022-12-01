@@ -31,7 +31,7 @@ public class StudentController {
     }
 
 
-    //localhost:9090/api/student/firstName эгер сортту аты менен жасай турган болсо
+
     @GetMapping("/{sort}")
     public String sortStudent(@PathVariable String sort) {
         return studentService.findStudentWithSort(sort).toString();

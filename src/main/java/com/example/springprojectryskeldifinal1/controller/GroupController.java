@@ -45,7 +45,7 @@ public class GroupController {
     public GroupResponse updateGroup(@PathVariable Long id, @RequestBody GroupRequest groupRequest) {
         return groupService.updateGroup(id, groupRequest);
     }
-//localhost:9090/api/groups/search?student=Timur издоо жолу
+
     @GetMapping("/search")
     public String searchStudent(@RequestParam("student") String search) {
         return groupService.findByStudents(search).toString();
